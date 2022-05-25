@@ -99,7 +99,7 @@ ehpc = EventHubProducerClient(fully_qualified_namespace=eventhub_servicebus, cre
 # COMMAND ----------
 
 response = requests.get(
-    "https://api.twitter.com/2/tweets/search/stream?expansions=author_id&tweet.fields=created_at", auth=bearer_oauth, stream=True,
+    "https://api.twitter.com/2/tweets/search/stream?expansions=author_id&tweet.fields=created_at,public_metrics", auth=bearer_oauth, stream=True,
 )
 
 if response.status_code != 200:
@@ -108,11 +108,12 @@ if response.status_code != 200:
             response.status_code, response.text
         )
     )
+increment =  0
 for response_line in response.iter_lines():
     if response_line:
+        increment += 1
+        print(f"Message {increment} received")
         event_data_batch = ehpc.create_batch()
         data = EventData(body=response_line)
         event_data_batch.add(data)
         ehpc.send_batch(event_data_batch)
-        
-ehpc.close()
