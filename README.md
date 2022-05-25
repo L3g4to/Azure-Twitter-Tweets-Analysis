@@ -6,7 +6,7 @@ To run the analysis you will need the following infrastructure:
 - **Azure Blog Storage**
 - **Azure EventHub:** You will have to configure your EventHub to capture all events to your Azure Blob Storage
 - **Azure Databricks:** To run the notebooks in this repository
-- **Azure KeyValut:** For securely storing all secrets
+- **Azure Key Vault:** For securely storing all secrets
 
 ## Overview
 All data is saved into Databricks tables to be made available externally for analysis e.g. through Power BI. The following tables are made available:
