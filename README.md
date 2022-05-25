@@ -16,7 +16,7 @@ All data is saved into Databricks tables to be made available externally for ana
 
 ## Tutorial
 To setup follow instructions below:
-* Sign-up for Twitter API [![Twitter API]https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api]
+* Sign-up for Twitter API https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api
 * Find your Bearer Token on your Twitter API
 * Setup an Azure Storage Account
 * Setup an Azure EventHub (Standard) and configure capturing messages to a Blob Storage location in your Azure Storage Account. The name of your folder should be **twitter**
