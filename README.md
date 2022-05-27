@@ -27,8 +27,8 @@ To setup follow instructions below:
   * **BlobStorageSAS** - your Azure Storage Account SAS created key
   * **EventHubNamespace** - the name of your EventHubNamespace
   * **EventHubName** - the name of your EventHub
-  * **EventHubPolicy** - the name of the policy you create within your EventHub with Manage permissions
-  * **EventHubSAS** - the name of your EventHub SAS that you will create
+  * **EventHubPolicy** - the name of the Share Access Policy you create within your EventHub with Manage permissions
+  * **EventHubSAS** - the Share Access Policy primary key
   * **EventHubServicebus** - your EventHub Serviuce bus
 * Create a SecretScope within your Azure Databricks workspace and name it"TwitterStreamKV". The URL to create a Secret Scope is **https://<databricks-instance>#secrets/createScope**. Use "Creator" as "Manage Principal" and provide your Key Vault DNS name and resource ID.
 * Run the **twitter-eventhub-producer** notebook. You should see messages like so:
