@@ -1,7 +1,8 @@
 # Azure Twitter Tweets Analysis
 The repository contains an example analysis of Twitter tweets captured by an Azure Event Hub using capture (to Azure Blob storage as avro files).
 
-You can find more details of the project on my Blog on [AnalystCave.com]https://analystCave.com
+You can find more details of the project on my Blog on [AnalystCave.com](https://analystcave.com) under this link:
+https://analystcave.com/how-to-create-a-twitter-power-bi-dashboard-with-azure/
 
 ## Prerequisite
 To run the analysis you will need the following infrastructure:
